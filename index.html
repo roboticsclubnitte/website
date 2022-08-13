@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Robotics Club Nitte</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="Images/Logo_color.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="load">
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+      </div>
+      <nav id="nav">
+        <div class="logo" id="logo">
+          <img
+            src="Images/White Logo.png"
+            id="logo-img"
+            alt="Logo"
+            class="nav-logo"
+          />
+          <p id="logo-p">Robotics Club Nitte</p>
+        </div>
+        <input type="checkbox" id="check" onchange="changeIcon()" />
+        <label for="check" class="menu-icon"
+          ><img id="menu-img" src="Images/Menu Icon.png"
+        /></label>
+        <div class="nav-list" id="menu">
+          <ul>
+            <li>
+              <a onclick="hide()" class="li-btn" id="nav-btn" href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a onclick="hide()" class="li-btn" id="nav-btn" href="#about-us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a onclick="hide()" class="li-btn" id="nav-btn" href="#workshops"
+                >Workshops</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="hide()"
+                class="li-btn"
+                id="nav-btn"
+                href="#achievements"
+                >Achievements</a
+              >
+            </li>
+            <li>
+              <a onclick="hide()" class="li-btn" id="nav-btn" href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="nav-home">
+        <div id="home" class="home" data-aos="fade-up">
+          <div class="details-home">
+            <h2 class="">
+              Robotics Club Nitte is the technical club of NMAMIT, works on
+              building technology and imparting Knowledge.
+            </h2>
+            <h3 class="">Upskilling Awaits!</h3>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeDI5gp2Tdbz8iQ7NEiu29Xxo2G4tRtx-sz1QdDNHkrSPGz7A/viewform"
+              class="btn-home"
+              >REGISTER NOW</a
+            >
+          </div>
+          <div class="bot-image">
+            <img src="Images/Bot.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="about-us" id="about-us">
+      <div data-aos="fade-up">
+        <h2 class="w-heading">About Us</h2>
+      </div>
+      <div class="about-us-cnt" data-aos="fade-up">
+        <div class="about-txt-cnt">
+          <div class="about-text">
+            <h3>
+              Robotics Club Nitte, the official Robotics and multidisciplinary
+              club of NMAMIT.
+            </h3>
+            <p>
+              Club works on designing, building and creating various mechanical
+              and electronic bots. Conducts workshop on Bot building, Internet
+              Of Things, 3D modelling and Programming languages. Works on
+              building multidisciplinary projects.
+            </p>
+          </div>
+        </div>
+        <div class="a-img-cnt" data-aos="fade-up">
+          <img src="Images/Group 5.png" alt="" class="about-img" />
+        </div>
+      </div>
+    </div>
+
+    <!--Workshop Section-->
+
+    <div class="workshops" id="workshops">
+      <div class="w-cnt">
+        <h2 class="w-heading" data-aos="fade-up">Workshops</h2>
+      </div>
+      <div class="ws-container">
+        <div class="w-box" data-aos="fade-up">
+          <div class="w-img">
+            <img src="Images/Bot_building.png" alt="" />
+          </div>
+          <div>
+            <h3>Bot building workshop</h3>
+            <p>
+              Works on building different bots like Obstacle detectin bot, Line
+              follower bot, etc by using sensors like PIR, Ultrasonic sensors
+              and Microcontrollers like Arduino and Raspberrypi.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-box" data-aos="fade-up">
+          <div class="w-img">
+            <img src="Images/IOT.png" alt="" />
+          </div>
+          <div>
+            <h3>Internet Of Things</h3>
+            <p>
+              Hands on working with Arduino, NodeMCU, Sensors and other
+              electronic components to build Home automation system, wireless
+              controller etc.
+            </p>
+          </div>
+        </div>
+        <div class="w-box" data-aos="fade-up">
+          <div class="w-img">
+            <img src="Images/3D_modelling.png" alt="" />
+          </div>
+          <div>
+            <h3>3D Modelling</h3>
+            <p>
+              Workshop covers the basics of views, 3D planes to make beginners
+              understand the fundamentals of modelling. It covers 2D sketches,
+              Extrude, Revolve, Sweep and other 3D modelling concepts.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-box" data-aos="fade-up">
+          <div class="w-img">
+            <img src="Images/Brainstorming.png" alt="" />
+          </div>
+          <div>
+            <h3>Machine Learning</h3>
+            <p>
+              Hands On project workshop starting from python, its libraries to
+              start working on Machine Learning algorithms.
+            </p>
+          </div>
+        </div>
+        <div class="w-box" data-aos="fade-up">
+          <div class="w-img">
+            <img src="Images/circuit.png" alt="" />
+          </div>
+          <div>
+            <h3>PCB Design</h3>
+            <p>
+              Workshop covers Printed Circuit Board Design processes and
+              principles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Team Alligators Section-->
+    <div class="alligator-div" id="team-alligators">
+      <div class="al-logo" data-aos="fade-up">
+        <img src="Images/Alligators Logo.png" alt="" />
+      </div>
+      <div class="alligators-container">
+        <div class="division" data-aos="fade-up">
+          <h3>Combat Robotics division</h3>
+          <p>
+            Involves in building various combat bots like Race bots, Soccer
+            bots, War bots etc.Team focuses on design, testing, fabricating and
+            control of bots.
+          </p>
+        </div>
+        <div class="division" data-aos="fade-up">
+          <h3>Drone division</h3>
+          <p>
+            Involves in design, fabrication and controlling of RC controlled
+            drones.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Achievements Section-->
+    <div class="achievements" id="achievements">
+      <div data-aos="fade-up">
+        <h2 class="w-heading">Our Achievements</h2>
+      </div>
+
+      <div class="achievement-div" data-aos="fade-up">
+        <div class="achievement-img">
+          <img src="Images/Achivement_1.png" alt="NIE mysore" />
+        </div>
+        <div class="achievement-cnt">
+          <p>
+            Team Alligators participated in Events conducted at NIE Mysore and
+            won 1st and 2nd place in Robowars and 3rd place robo race.
+          </p>
+        </div>
+      </div>
+      <div class="achievement-div" data-aos="fade-up">
+        <div class="achievement-img">
+          <img src="Images/IIT B Image.png" alt="NIE mysore" />
+        </div>
+        <div class="achievement-cnt">
+          <p>
+            Team Alligators participated in International Robowars held at Tech
+            Feast, IIT Bombay in 2022.
+          </p>
+        </div>
+      </div>
+      <!---->
+      <div class="know-more">
+        <a href="registration.html" target="_blank"
+          >Know all our achievements</a
+        >
+        <ion-icon
+          name="chevron-forward-outline"
+          href="Documents/Alligators Achievements 2018-22.pdf"
+        ></ion-icon>
+      </div>
+    </div>
+    <!--Contact Us Section-->
+    <div class="contact_us" id="contact">
+      <div class="contact-left">
+        <h3 data-aos="fade-up">Get in touch with us</h3>
+      </div>
+      <div class="form" data-aos="fade-up">
+        <h3>Contact</h3>
+        <form action="https://api.mailslurp.com/forms" method="post">
+          <input type="hidden" name="_to" value="raosanjayu@gmail.com" />
+          <label for="name">Name</label>
+          <br />
+          <input
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            id="name"
+          />
+          <br />
+          <label for="phone">Phone</label>
+          <br />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone number"
+            id="phone"
+          />
+          <br />
+          <label for="subject">Subject</label>
+          <br />
+          <input
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            id="subject"
+          />
+          <br />
+          <label for="message">Message</label>
+          <br />
+          <input
+            type=""
+            placeholder="Enter your message here"
+            id="message"
+            columns="3"
+            rows="10"
+            name="message"
+            class="message-inp"
+          />
+          <br />
+          <button type="submit">Submit</button>
+          <div class="social">
+            <a href="https://www.instagram.com/roboticsclub_nitte/?hl=en">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://in.linkedin.com/company/robotics-club-nitte">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 200, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 500, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>
