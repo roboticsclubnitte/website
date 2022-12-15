@@ -28,8 +28,12 @@
 
 /* Create the animation */
 @keyframes bar {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 :root {
   --pseudo-backgroundcolor: #fff;
@@ -40,14 +44,14 @@ body {
   background-color: #fff;
 }
 .header {
-  background: #194d82;
+  background: #1b1b1b;
   height: 100vh;
 }
 .nav-home {
   background: url(Images/Top_background_.png);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-  height: auto;
+  height: 100vh;
   overflow: hidden;
 }
 .menu-icon {
@@ -63,7 +67,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  position:fixed;
+  position: fixed;
   z-index: 999;
   transition: all 0.5s ease;
   left: 0;
@@ -76,7 +80,7 @@ nav {
 
 nav p {
   display: inline-block;
-  color: #fff;
+  color: #000;
   font-size: 200%;
   font-weight: 600;
   line-height: 5.5rem;
@@ -146,21 +150,23 @@ nav p {
 .home {
   display: flex;
   width: 100%;
+  margin: 5rem 0;
 }
 .details-home {
   display: block;
   width: 60%;
-  padding: 2rem 6.5rem;
-  margin: auto;
+  padding: 3rem 6.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .details-home h2 {
-  color: #fff;
+  color: #000;
   font-size: 260%;
   width: 100%;
   font-weight: 600;
 }
 .details-home h3 {
-  color: #fff;
+  color: #232323;
   font-weight: 300;
   font-size: 200%;
   padding: 0.8rem 0;
@@ -173,8 +179,8 @@ nav p {
   font-size: 140%;
   margin: 0.5rem 0rem;
   padding: 0.4rem 2.8rem;
-  background-color: #004183;
-  border: 2px solid #004183;
+  background-color: #232323;
+  border: 2px solid #232323;
   transform: none;
   transition: all 0.6s;
   border-radius: 6px;
@@ -182,13 +188,13 @@ nav p {
 .btn-home:hover {
   display: inline-block;
   text-decoration: none;
-  color: #054b91;
+  color: #000;
   font-weight: 600;
-    font-size: 140%;
+  font-size: 140%;
   margin: 0.5rem 0rem;
   padding: 0.4rem 2.8rem;
   background-color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   transform: none;
   transition: all 0.6s;
   border-radius: 6px;
@@ -598,6 +604,7 @@ nav p {
   }
   .logo p {
     font-size: 150%;
+    color: #000 !important;
   }
 
   .home {
@@ -918,26 +925,26 @@ nav p {
     overflow-x: hidden;
   }
   .bar {
-  width: 100%;
-  padding: 0.3rem 0;
-  overflow: hidden;
-  border-bottom: 2px solid #054b91;
-  background-color: #fff;
-  color: #054b91;
-  height: 2rem;
-  font-size: 14px;
-}
+    width: 100%;
+    padding: 0.3rem 0;
+    overflow: hidden;
+    border-bottom: 2px solid #054b91;
+    background-color: #fff;
+    color: #054b91;
+    height: 2rem;
+    font-size: 14px;
+  }
 
-.bar_content {
-  display: block;
+  .bar_content {
+    display: block;
 
-  width: 100%;
-  transform: translateX(80%); /* Animation start out of the screen */
+    width: 100%;
+    transform: translateX(80%); /* Animation start out of the screen */
 
-  /* Add the animation */
-  animation: bar 10s linear infinite
-    /* infinite make reapeat the animation indefinitely */;
-}
+    /* Add the animation */
+    animation: bar 10s linear infinite
+      /* infinite make reapeat the animation indefinitely */;
+  }
 
   ::-webkit-scrollbar {
     width: 2px;
@@ -1477,6 +1484,7 @@ nav p {
   }
   .logo p {
     font-size: 150%;
+    color: #000;
   }
 
   .home {
