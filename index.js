@@ -22,51 +22,51 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-window.onload = function () {
-  var achor = document.getElementById("Login_btn");
-  var text = achor.getElementsByTagName("a");
-  var head = document.getElementById("head");
-  var button = document.getElementById("button");
-  var content = document.getElementById("content");
-  let Logged = window.localStorage.getItem("Logged");
-  console.log(Logged);
-  if (Logged === "true") {
-    // Use strict equality operator '==='
-    text[0].innerHTML = "Profile";
-    text[0].href = "clubpayment.vercel.app";
-    console.log(content.innerText);
-    content.innerText =
-      " Club designs, builds, and creates bots. Conducts workshops on Bot building, IoT, 3D modeling, and Programming. Works on diverse projects.";
-    head.textContent = "View Your Dashbord By Clicking below";
-    button.textContent = "Dasboard";
-    setTimeout(() => {
-      text[0].innerHTML = "Login";
-      text[0].href = "clubpayment.vercel.app/Login";
-      window.localStorage.setItem("Logged", "false"); 
-      Logged = "false"; 
-      console.log(Logged);
-      content.innerText =
-    "Welcome to the Club of Innovation and Technology: Where Designs, Bots, IoT, 3D Modeling, and Programming Merge to Inspire Diverse Projects and Fuel Your Creative Exploration!";
-      head.textContent = "Register now and be the part of our club!";
-    button.textContent = "Register Now";
-    }, 1800000);
-  } else {
-    // const head=document.createElement("h1")
-    // head.innerHTML="Register now and be the part of our team!"
-    // const Button=document.createElement("a");
-    // Button.innerHTML="Register now"
-    // Button.href="https://docs.google.com/forms/d/e/1FAIpQLSfqHkKp3CIM-TCRWm6MDmPz7nfsS9ZHuzXd7J5uW3QzgvJG-g/viewform?usp=sf_link"
-    // Button.className="btn-home"
-    // const v=document.getElementById("name")
-    // v.appendChild(head)
-    // const r=document.getElementById("button")
-    // r.appendChild(Button)
-    content.innerText =
-    "Welcome to the Club of Innovation and Technology: Where Designs, Bots, IoT, 3D Modeling, and Programming Merge to Inspire Diverse Projects and Fuel Your Creative Exploration!";
-    head.textContent = "Register now and be the part of our club!";
-    button.textContent = "Register Now";
-  }
-};
+// window.onload = function () {
+//   var achor = document.getElementById("Login_btn");
+//   var text = achor.getElementsByTagName("a");
+//   var head = document.getElementById("head");
+//   var button = document.getElementById("button");
+//   var content = document.getElementById("content");
+//   let Logged = window.localStorage.getItem("Logged");
+//   console.log(Logged);
+//   if (Logged === "true") {
+//     // Use strict equality operator '==='
+//     text[0].innerHTML = "Profile";
+//     text[0].href = "clubpayment.vercel.app";
+//     console.log(content.innerText);
+//     content.innerText =
+//       " Club designs, builds, and creates bots. Conducts workshops on Bot building, IoT, 3D modeling, and Programming. Works on diverse projects.";
+//     head.textContent = "View Your Dashbord By Clicking below";
+//     button.textContent = "Dasboard";
+//     setTimeout(() => {
+//       text[0].innerHTML = "Login";
+//       text[0].href = "clubpayment.vercel.app/Login";
+//       window.localStorage.setItem("Logged", "false"); 
+//       Logged = "false"; 
+//       console.log(Logged);
+//       content.innerText =
+//     "Welcome to the Club of Innovation and Technology: Where Designs, Bots, IoT, 3D Modeling, and Programming Merge to Inspire Diverse Projects and Fuel Your Creative Exploration!";
+//       head.textContent = "Register now and be the part of our club!";
+//     button.textContent = "Register Now";
+//     }, 1800000);
+//   } else {
+//     // const head=document.createElement("h1")
+//     // head.innerHTML="Register now and be the part of our team!"
+//     // const Button=document.createElement("a");
+//     // Button.innerHTML="Register now"
+//     // Button.href="https://docs.google.com/forms/d/e/1FAIpQLSfqHkKp3CIM-TCRWm6MDmPz7nfsS9ZHuzXd7J5uW3QzgvJG-g/viewform?usp=sf_link"
+//     // Button.className="btn-home"
+//     // const v=document.getElementById("name")
+//     // v.appendChild(head)
+//     // const r=document.getElementById("button")
+//     // r.appendChild(Button)
+//     content.innerText =
+//     "Welcome to the Club of Innovation and Technology: Where Designs, Bots, IoT, 3D Modeling, and Programming Merge to Inspire Diverse Projects and Fuel Your Creative Exploration!";
+//     head.textContent = "Register now and be the part of our club!";
+//     button.textContent = "Register Now";
+//   }
+// };
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("nav").style.backgroundColor = "#fff";
