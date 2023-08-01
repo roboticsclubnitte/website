@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +29,7 @@
       type="image/x-icon"
     />
   </head>
-
+  <script src="main.js"></script>
   <body>
     <header class="header" id="header">
       <nav id="nav">
@@ -46,7 +47,7 @@
           ><img id="menu-img" src="Images/Menu Icon.png"
         /></label>
         <div class="nav-list" id="menu">
-          <ul>
+          <ul id="nav-list">
             <li>
               <a onclick="hide()" class="li-btn" id="nav-btn" href="#home"
                 >Home</a
