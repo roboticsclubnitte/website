@@ -8,7 +8,9 @@ axios
   .then((res) => {
     if (res.status === 200) {
       var head = document.getElementById("head");
-      var button = document.getElementById("button");
+      var button = document.getElementById("button_1");
+      var buttonlink= button.getElementsByTagName("a")
+      buttonlink.href="https://dashboard.roboticsclubnitte.com"
       var content = document.getElementById("content");
       const profileComponent = document.createElement("li");
       const Link = document.createElement("a");
