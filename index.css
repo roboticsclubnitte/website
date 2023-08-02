@@ -48,7 +48,7 @@ body {
   height: 100vh;
 }
 .nav-home {
-  background: url(Images/Top_background_.png);
+  background: url(Images/Top_background.png);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
   height: 100vh;
