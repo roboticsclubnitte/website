@@ -22,7 +22,7 @@ axios
       navList.appendChild(profileComponent);
       content.textContent =
         " Club designs, builds, and creates bots. Conducts workshops on Bot building, IoT, 3D modeling, and Programming. Works on diverse projects.";
-      if (res.data.paymentStatus === "RECEIVED") {
+      if (res.data.user.PaymentStatus === "RECEIVED") {
         buttonlink.href = "https://dashboard.roboticsclubnitte.com";
         head.textContent = "View Your Dashbord By Clicking below";
         button.textContent = "Dasboard";
