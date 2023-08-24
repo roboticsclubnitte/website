@@ -18,16 +18,17 @@ axios
       profileComponent.appendChild(Link);
       profileComponent.addEventListener("click", login);
       Link.innerHTML = "Profile";
+      Link.href="https://dashboard.roboticsclubnitte.com";
       const navList = document.getElementById("nav-list");
       navList.appendChild(profileComponent);
       content.textContent =
         " Club designs, builds, and creates bots. Conducts workshops on Bot building, IoT, 3D modeling, and Programming. Works on diverse projects.";
       if (res.data.user.PaymentStatus === "RECEIVED") {
-        buttonlink.href = "https://dashboard.roboticsclubnitte.com";
         head.textContent = "View Your Dashbord By Clicking below";
         button.textContent = "Dasboard";
+        button.href = "https://dashboard.roboticsclubnitte.com";
       } else {
-        buttonlink.href = "#about-us";
+        button.href = "#about-us";
         head.textContent = "Get Kown More About Us";
         button.textContent = "GET KOWN US";
         alert("Payment not verified!");
