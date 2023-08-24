@@ -16,9 +16,8 @@ axios
       Link.className = "li-btn";
       Link.id = "nav-btn";
       profileComponent.appendChild(Link);
-      profileComponent.addEventListener("click", login);
       Link.innerHTML = "Profile";
-      Link.href="https://dashboard.roboticsclubnitte.com";
+      Link.href = "https://dashboard.roboticsclubnitte.com";
       const navList = document.getElementById("nav-list");
       navList.appendChild(profileComponent);
       content.textContent =
@@ -32,6 +31,7 @@ axios
         head.textContent = "Get Kown More About Us";
         button.textContent = "GET KOWN US";
         alert("Payment not verified!");
+        
       }
     }
   })
