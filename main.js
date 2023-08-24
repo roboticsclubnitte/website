@@ -27,7 +27,7 @@ axios
         head.textContent = "View Your Dashbord By Clicking below";
         button.textContent = "Dasboard";
       } else {
-        buttonlink.href = "#about";
+        buttonlink.href = "#about-us";
         head.textContent = "Get Kown More About Us";
         button.textContent = "GET KOWN US";
         alert("Payment not verified!");
@@ -40,7 +40,7 @@ axios
     Link.className = "li-btn";
     Link.id = "nav-btn";
     profileComponent.appendChild(Link);
-    Link.innerHTML = "Login/Register";
+    Link.innerHTML = "Login";
     profileComponent.addEventListener("click", login);
     const navList = document.getElementById("nav-list");
     navList.appendChild(profileComponent);
@@ -49,7 +49,7 @@ axios
 function login() {
   axios
     .post(
-      "https://rbclub-server.onrender.com/api/auth/register",
+      "https://server.roboticsclubnitte.com/api/auth/register",
       {},
       { withCredentials: true }
     )
