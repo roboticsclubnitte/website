@@ -1,7 +1,7 @@
 let user = null;
 axios
   .post(
-    "https://rbclub-server.onrender.com/api/auth/me",
+    "https://server.roboticsclubnitte.com/api/auth/me",
     {},
     { withCredentials: true }
   )
