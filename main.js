@@ -7,16 +7,20 @@ axios
   )
   .then((res) => {
     if (res.status === 200) {
+      let img = document.createElement("img");
+      img.style.height = "30px";
+      img.style.width = "30px";
+      img.style.borderRadius = "25rem";
+      img.src = res.data.user.ProfileImg;
       var head = document.getElementById("head");
       var button = document.getElementById("button_1");
-      var buttonlink = button.getElementsByTagName("a");
       var content = document.getElementById("content");
       const profileComponent = document.createElement("li");
       const Link = document.createElement("a");
       Link.className = "li-btn";
       Link.id = "nav-btn";
       profileComponent.appendChild(Link);
-      Link.innerHTML = "Profile";
+      Link.appendChild(img);
       Link.href = "https://dashboard.roboticsclubnitte.com";
       const navList = document.getElementById("nav-list");
       navList.appendChild(profileComponent);
@@ -31,7 +35,6 @@ axios
         head.textContent = "Get Kown More About Us";
         button.textContent = "GET KOWN US";
         alert("Payment not verified!");
-        
       }
     }
   })
