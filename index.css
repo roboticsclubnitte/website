@@ -307,7 +307,7 @@ nav p {
 /*Alliagtors div*/
 
 .alligator-div {
-  background-image: url("Images/Alligators_background.png");
+  background-image: url("Images/Image.svg");
   background-size: cover;
 }
 .alligators-container {
@@ -747,12 +747,8 @@ nav p {
     padding: 0.8rem;
   }
   .alligator-div {
-    background-image: url("Images/Alligators_background_mobile.png");
-    background-size: cover;
-    display: flex;
-    width: 100%;
-    overflow-x: hidden;
-    flex-direction: column;
+    background-image: url("Images/Image.svg");
+   
   }
   .alligators-container {
     display: flex;
@@ -765,8 +761,8 @@ nav p {
   }
   .al-logo {
     padding: 0;
+    margin: 0;
     text-align: center;
-    margin-top: 5rem;
   }
   .al-logo img {
     width: 50%;
@@ -1200,7 +1196,7 @@ nav p {
     padding: 0.8rem;
   }
   .alligator-div {
-    background-image: url("Images/Alligators_background_mobile.png");
+    background-image: url("Images/Image.svg");
     background-size: cover;
     display: flex;
     width: 100%;
@@ -1625,7 +1621,7 @@ nav p {
     padding: 0.8rem;
   }
   .alligator-div {
-    background-image: url("Images/Alligators_background_mobile.png");
+    background-image: url("Images/Image.svg");
     background-size: cover;
     display: flex;
     width: 100%;
@@ -1633,18 +1629,13 @@ nav p {
     flex-direction: column;
   }
   .alligators-container {
-    display: flex;
     margin: 0rem;
     width: 90%;
     padding: 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
   }
   .al-logo {
     padding: 0;
     text-align: center;
-    margin-top: 5rem;
   }
   .al-logo img {
     width: 70%;
