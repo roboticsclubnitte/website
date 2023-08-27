@@ -8,8 +8,8 @@ axios
   .then((res) => {
     if (res.status === 200) {
       let img = document.createElement("img");
-      img.style.height = "30px";
-      img.style.width = "30px";
+      img.style.height = "35px";
+      img.style.width = "35px";
       img.style.borderRadius = "25rem";
       img.src = res.data.user.ProfileImg;
       var head = document.getElementById("head");
