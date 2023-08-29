@@ -34,7 +34,7 @@ axios
         button.href = "#about-us";
         head.textContent = "Get Kown More About Us";
         button.textContent = "GET KOWN US";
-        alert("Payment not verified!");
+        alert("Payment not Yet verified.Will Update You Soon");
       }
     }
   })
