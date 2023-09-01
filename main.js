@@ -33,8 +33,8 @@ axios
         button.href = "https://dashboard.roboticsclubnitte.com";
       } else {
         button.href = "#about-us";
-        head.textContent = "Get Kown More About Us";
-        button.textContent = "GET KOWN US";
+        head.textContent = "Get To Know More About Us";
+        button.textContent = "Know More";
         alert("Payment has not yet been verified. It will be verified within 2-3 working days, and a confirmation email will be sent once the verification is done");
       }
       }
