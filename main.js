@@ -26,6 +26,7 @@ axios
       navList.appendChild(profileComponent);
       content.textContent =
         " Club designs, builds, and creates bots. Conducts workshops on Bot building, IoT, 3D modeling, and Programming. Works on diverse projects.";
+      if(res.data.user.PaymentID !== null){
       if (res.data.user.PaymentStatus === "RECEIVED") {
         head.textContent = "View Your Dashbord By Clicking below";
         button.textContent = "Dasboard";
@@ -36,6 +37,8 @@ axios
         button.textContent = "GET KOWN US";
         alert("Payment has not yet been verified. It will be verified within 2-3 working days, and a confirmation email will be sent once the verification is done");
       }
+      }
+        
     }
   })
   .catch((error) => {
